@@ -1,0 +1,18 @@
+body{
+    background-color: hsl(210, 46%, 95%);
+    
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 3;
+    column-gap: 50px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
