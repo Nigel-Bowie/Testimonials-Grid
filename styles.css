@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* DESKTOP MODE */
 :root{
     --COLOR: white;
@@ -8,22 +14,24 @@ body{
     display:flex; 
     flex-direction:column; 
     justify-content:center;
-    min-height:100vh;
-    margin: auto auto;
-    max-width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 80%;
     overflow: hidden;
     font-family: BarlowSemiCondensed;
-    src: (https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
     font-size: 13px;
     font-weight: 500px;
+    line-height: 1.5;
     color: var(--COLOR);
 }
 
 .grid_container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     grid-auto-rows: minmax(100px, auto);
+    
 }
 
 .grid_items{
@@ -67,6 +75,7 @@ body{
 .Kira_Whittle img,.Jeanette_Harmon img{
     border: 5px solid inherit;
     border-radius: 50%;
+    column-fill: auto;
 }
 
 .Daniel_Clifford img, .Jonathan_Walters img, .Patrick_Abrams img{
@@ -81,6 +90,12 @@ img{
 
 .largP{
     font-weight: 600px;
+    font-weight: bold;
+    opacity: 70%;
+}
+
+p{
+    opacity: 50%;
 }
 
 /*ATTRIBUTION */
