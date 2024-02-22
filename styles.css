@@ -1,3 +1,4 @@
+/* DESKTOP MODE */
 :root{
     --COLOR: white;
 }
@@ -9,6 +10,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 13px;
     font-weight: 500px;
+    color: var(--COLOR);
 }
 
 .grid_container{
@@ -26,29 +28,35 @@ body{
 .Daniel_Clifford{
     grid-column: 1/3;
     grid-row: 1;
-    background-color: purple;
+    background-color: hsl(263, 55%, 52%);
 }
 
 .Jonathan_Walters{
     grid-column: 3;
     grid-row: 1;
+    background-color: hsl(217, 19%, 35%);
 }
 
 .Kira_Whittle{
     grid-column: 4;
     grid-row: 1/3;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .Jeanette_Harmon{
     grid-column: 1;
     grid-row: 2;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .Patrick_Abrams{
     grid-column: 2/4;
     grid-row: 2;
+    background-color: hsl(219, 29%, 14%);
 }
 
+
+/*ATTRIBUTION */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -57,11 +65,15 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 
-/* DESKTOP */
 
-@media screen (max-width=1440px){
+/* MOBILE MODE */
+@media  screen (width>= 375px) and (width < 1440px) {
     .grid_container{
         display: flex;
+    }
+
+    .grid_items{
         flex-direction: column;
     }
+
 }
