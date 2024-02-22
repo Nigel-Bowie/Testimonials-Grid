@@ -5,9 +5,15 @@
 
 body{
     background-color: hsl(210, 46%, 95%);
-    padding: 10rem;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    min-height:100vh;
+    margin: auto auto;
+    max-width: 90%;
     overflow: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: BarlowSemiCondensed;
+    src: (https://fonts.google.com/specimen/Barlow+Semi+Condensed);
     font-size: 13px;
     font-weight: 500px;
     color: var(--COLOR);
@@ -63,11 +69,25 @@ body{
     border-radius: 50%;
 }
 
+.Daniel_Clifford img, .Jonathan_Walters img, .Patrick_Abrams img{
+    border: 3px solid purple;
+    border-radius: 50%;
+}
+
+img{
+    float: left;
+    margin-right: 1rem;
+}
+
+.largP{
+    font-weight: 600px;
+}
 
 /*ATTRIBUTION */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color:black;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -75,13 +95,22 @@ body{
 
 
 /* MOBILE MODE */
-@media  screen (width>= 375px) and (width < 1440px) {
+@media only screen and (max-width:1440px) {
     .grid_container{
         display: flex;
-    }
-
-    .grid_items{
         flex-direction: column;
+        justify-content:center;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .grid_items{
+        width: inherit;
+    }
+    .Daniel_Clifford, .Jeanette_Harmon, .Jonathan_Walters,.Kira_Whittle, .Patrick_Abrams{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
     }
 
 }
