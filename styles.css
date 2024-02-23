@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* DESKTOP MODE */
+/* DESKTOP MODE */ 
 :root{
     --COLOR: white;
 }
@@ -15,9 +16,9 @@ body{
     flex-direction:column; 
     justify-content:center;
     min-height: 100vh;
-    margin: 0 auto;
-    max-width: 80%;
-    overflow: hidden;
+    margin: 1rem auto;
+    max-width: 90%;
+    overflow: scroll;
     font-family: BarlowSemiCondensed;
     src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
     font-size: 13px;
@@ -25,6 +26,9 @@ body{
     line-height: 1.5;
     color: var(--COLOR);
 }
+
+
+/* OLD VERSION */
 
 .grid_container{
     display: grid;
@@ -39,6 +43,7 @@ body{
     border-radius: 10px;
     padding: 2rem;
 }
+
 
 .Daniel_Clifford{
     grid-column: 1/3;
